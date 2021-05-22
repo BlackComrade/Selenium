@@ -27,7 +27,7 @@ namespace NUnitTestProject1
         }
 
         [Test]
-        public void Test1()
+        public void Test1_Login()
         {
             login();
 
@@ -38,7 +38,7 @@ namespace NUnitTestProject1
         }
 
         [Test]
-        public void Test2()
+        public void Test2_CreateProduct()
         {
             login();
 
@@ -73,7 +73,7 @@ namespace NUnitTestProject1
         }
 
         [Test]
-        public void Test3()
+        public void Test3_CheckProduct()
         {
             login();
 
@@ -103,7 +103,7 @@ namespace NUnitTestProject1
         }
 
         [Test]
-        public void Test4()
+        public void Test4_DeleteProduct()
         {
             login();
 
@@ -116,9 +116,9 @@ namespace NUnitTestProject1
             Assert.AreEqual("All Products", nameproduct.Text);
 
         }
-        // Опциональный 
-        /*[Test]   
-        public void Test5()
+        
+        [Test]   
+        public void Test5_Logout()
         {
             login();
 
@@ -129,7 +129,7 @@ namespace NUnitTestProject1
             driver.SwitchTo().Alert().Accept();
             Assert.IsFalse(driver.PageSource.Contains("newpr"));
 
-        }*/
+        }
 
 
         [TearDown]
