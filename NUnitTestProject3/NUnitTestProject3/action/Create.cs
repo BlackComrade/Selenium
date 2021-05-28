@@ -6,14 +6,8 @@ using SeleniumExtras.PageObjects;
 
 namespace NUnitTestProject3.action
 {
-    class Create : AbstractPage
+    class Create 
     {
-        public Create(IWebDriver driver)
-        {
-            this.driver = driver;
-            PageFactory.InitElements(driver, this);
-        
-        }
         public static void NewProduct(IWebElement name, 
                                             IWebElement category, 
                                             IWebElement supplier, 
