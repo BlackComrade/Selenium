@@ -10,15 +10,8 @@ using OpenQA.Selenium.Interactions;
 
 namespace NUnitTestProject3.action
 {
-    class Check : AbstractPage
+    class Check 
     {
-        public Check(IWebDriver driver)
-        {
-            this.driver = driver;
-            PageFactory.InitElements(driver, this);
-
-        }
-
         public static void ckproduct(IWebElement name, 
                                             IWebElement category, 
                                             IWebElement supplier, 
